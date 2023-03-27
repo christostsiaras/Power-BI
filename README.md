@@ -1,6 +1,6 @@
 # PowerBI
 
-[TOC]
+[[_TOC_]]
 
 Probem
 ------
