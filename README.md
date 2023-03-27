@@ -1,5 +1,9 @@
 # PowerBI
 
+[TOC]
+
+Probem
+------
 Power BI standard reports e.g., Pareto charts with the use of Cummulative Distribution Function (CDF), dynamic columns selection to illustrate without duplicated DAX code various KPIs e.g., Sales based on the revenue and quantity.
 
 Sample Dataset
