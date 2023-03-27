@@ -1,12 +1,12 @@
 # PowerBI
 
-- [Probem](#probem)
+- [Problem](#problem)
 - [Sample Dataset](#sample-dataset)
 - [Dynamic KPI Selection](#dynamic-kpi-selection)
 - [Create Generic DAX Measures](#create-generic-dax-measures)
 - [Consume a Generic DAX Measure](#consume-a-generic-dax-measure)
 
-Probem
+Problem
 --------
 Power BI standard reports e.g., Pareto charts with the use of Cummulative Distribution Function (CDF), dynamic columns selection to illustrate without duplicated DAX code various KPIs e.g., Sales based on the revenue and quantity.
 ![image](https://user-images.githubusercontent.com/5610687/228065362-3b2f32a5-de2e-4719-b87e-f0c1a0174220.png)
