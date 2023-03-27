@@ -1,10 +1,10 @@
 # PowerBI
 
--[Probem](#probem)
--[Sample Dataset](#sample-dataset)
--[Dynamic KPI Selection](#dynamic-kpi-selection)
--[Create Generic DAX Measures](#create-generic-dax-measures)
--[Consume a Generic DAX Measure](#consume-a-generic-dax-measure)
+- [Probem](#probem)
+- [Sample Dataset](#sample-dataset)
+- [Dynamic KPI Selection](#dynamic-kpi-selection)
+- [Create Generic DAX Measures](#create-generic-dax-measures)
+- [Consume a Generic DAX Measure](#consume-a-generic-dax-measure)
 
 Probem
 --------
