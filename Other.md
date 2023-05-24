@@ -49,3 +49,7 @@ Include the index column created above in the table visualization and short so t
 To add the report as a tooltip create a hidden page, tick on the option Tooltips and select the page on the page option.
 ![8](https://github.com/christostsiaras/Power-BI/assets/5610687/63364674-735d-4c2e-9c29-13299e1d3bfd)
 
+To consume tha page with the normal filter remove the top N filter from the visualization and add a slicer on the product line column.
+![9](https://github.com/christostsiaras/Power-BI/assets/5610687/cda9fa6d-3c40-4625-87b0-9bf11500f61d)
+
+
