@@ -8,35 +8,44 @@
 
 Problem
 --------
-Power BI standard reports e.g., Pareto charts with the use of Cummulative Distribution Function (CDF), dynamic columns selection to illustrate without duplicated DAX code various KPIs e.g., Sales based on the revenue and quantity.
-![image](https://user-images.githubusercontent.com/5610687/228065362-3b2f32a5-de2e-4719-b87e-f0c1a0174220.png)
+In power BI tooltips you cannot scroll and need to show only the top X values and summarize the rest in Others. You also often want the others option to be at the bottom despite the fact that the total number of rows can be the largest.
+![8](https://github.com/christostsiaras/Power-BI/assets/5610687/ae2c2de3-e1d1-4c9f-80bf-c2b350398b6b)
+
 
 Sample Dataset
 ----------------
 For this example the Supermarket dummy sales dataset is downloaded from [kaggle](https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales?resource=download).
 The assumption for the PBIX file to work is that you save the CSV dataset at "C:\data\supermarket_sales - Sheet1.csv". Else you might edit the query and change the path.
 
-Dynamic KPI Selection
------------------------
-To create the dynamic column selection fields e.g., to plot the sles diagrams either based on sales, or quantity 
-![Create Fields](https://user-images.githubusercontent.com/5610687/227746544-12d91969-aedd-4b99-a1e7-e0312a863cbc.png)
-![create selected parameter measure](https://user-images.githubusercontent.com/5610687/227746589-f81ad831-0f1a-41e4-bacd-f6fd4ade7976.png)
+Calculated Table with Other Option
+----------------------------------
+Create the table containing the Others value for a given column.In this case we will be counting number of invoices per Product line. So we need to create a table with one column containing all product lines plus the  additional value "Other"
+![1](https://github.com/christostsiaras/Power-BI/assets/5610687/b051f6e0-1a9b-4969-89e4-24cbec72963e)
 
-You might want to add the unit in the dynamic column selection. This you have to do it manually by editing the fields DAX code
+To do that go to the tab table tools and add a new calculated table
+![2](https://github.com/christostsiaras/Power-BI/assets/5610687/978bc9bd-2530-4550-9b1d-6595bfb6148e)
 
-![Parameter before adding Unit](https://user-images.githubusercontent.com/5610687/227746681-e051406c-f0c0-49d1-ad7e-a96a5606b98c.png)
-![Parameter after adding Unit](https://user-images.githubusercontent.com/5610687/227746647-7a7d4d44-4dd4-4e1c-9ff4-364321d43105.png)
 
-Create Generic DAX Measures
------------------------------
-To summarize the sales and the quantity you will need to use the ```SWITCH``` function. Doing that, later for any additional functions using the ```SUM``` generic function you created, you will not need to maintain futrther code, allowing you to edit the code only once and keeping your code [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
+Count Measures
+--------------
+Create in the original table the distinct count measure to calculate how many distinct invoices (keep in mind the invoice ID need to be either a number or a text) exist per product line.
+![3](https://github.com/christostsiaras/Power-BI/assets/5610687/ecfb2edc-6557-446b-9c73-33c4314fbf7e)
 
-![SUM 1](https://user-images.githubusercontent.com/5610687/227746739-6ff75afa-e7db-463e-89eb-db4996f50a8a.png)
-![SUM 2](https://user-images.githubusercontent.com/5610687/227746742-74bf799f-3c7a-42f6-82c7-7875d56b3b34.png)
+Now create another measure in the calculated table to count the distinct number of invoices including the other category. You may also use this measure beyond tooltips where you can use filtering.
+![4](https://github.com/christostsiaras/Power-BI/assets/5610687/fd6b34f7-aa15-4cb0-9e01-17890cceb608)
 
-Consume a Generic DAX Measure
--------------------------------
-The Cumulative Distribution Function (CDF) and %CDF is using the previosuly created ```SUM``` measure to sumarize either sales or quantity. Observe that the baseline is adjusted if a slicer is used to filter the sales period slicer. 
+Create the visualization consuming the newly created columns and measure. Use a table visualization and add a filter for this visualization refering to the original product line and filter the top N values based on the original count invoices measure.
+![5](https://github.com/christostsiaras/Power-BI/assets/5610687/091f43d4-0aa9-4c29-a351-788d2802ec3b)
 
-![CDF](https://user-images.githubusercontent.com/5610687/227746804-f8f32b7b-f8c2-494c-8025-fe0e31041580.png)
-![per cent CDF](https://user-images.githubusercontent.com/5610687/227746810-90cbb055-e50e-4ef6-a92f-a555d26dfa3c.png)
+To short and force the other option to be at the bottom you will need an additional supporting index measure. The code is shown below.
+![6](https://github.com/christostsiaras/Power-BI/assets/5610687/b9cb39a6-3fe8-4f37-927c-67d5a17fb06f)
+
+Add the Tooltip
+---------------
+
+Include the index column created above in the table visualization and short so that the Other option appers to the bottom.
+![7](https://github.com/christostsiaras/Power-BI/assets/5610687/76e902eb-4b34-485a-bfef-a187696eed05)
+
+To add the report as a tooltip create a hidden page, tick on the option Tooltips and select the page on the page option.
+![8](https://github.com/christostsiaras/Power-BI/assets/5610687/63364674-735d-4c2e-9c29-13299e1d3bfd)
+
