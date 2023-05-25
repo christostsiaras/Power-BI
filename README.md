@@ -16,10 +16,10 @@ Power BI standard reports e.g., Pareto charts with the use of Cummulative Distri
 
 Other
 -----
-Show other option in tooltips where is not possible to scroll trhou the full list of contents.
+Show __Other<__ option in tooltips where is not possible to illustrate the full list of contents.
 ![8](https://github.com/christostsiaras/Power-BI/assets/5610687/535eb4f3-2b91-4481-b580-d3cd260d0a8a)
 [Click here for details](/Other.md)
 
 Tips
 -----
-A general tip when creating Power BI reports is to use a background color e.g., light gray and add a board on each visualization to ease the user reading your reports.
+A general tip when creating Power BI reports is to use a background color e.g., light gray and add a boarder on each visualization to ease the user reading your reports.
