@@ -5,6 +5,7 @@
 - [Dynamic KPI Selection](#dynamic-kpi-selection)
 - [Create Generic DAX Measures](#create-generic-dax-measures)
 - [Consume a Generic DAX Measure](#consume-a-generic-dax-measure)
+- [Download](#download)
 
 Problem
 --------
@@ -40,3 +41,7 @@ The Cumulative Distribution Function (CDF) and %CDF is using the previosuly crea
 
 ![CDF](https://user-images.githubusercontent.com/5610687/227746804-f8f32b7b-f8c2-494c-8025-fe0e31041580.png)
 ![per cent CDF](https://user-images.githubusercontent.com/5610687/227746810-90cbb055-e50e-4ef6-a92f-a555d26dfa3c.png)
+
+Downaload
+---------
+Download the file [here](https://github.com/christostsiaras/Power-BI/tree/main/Cumulative%20Distribution%20Function)
