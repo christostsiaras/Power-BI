@@ -3,6 +3,7 @@
 - [Problem](#problem)
 - [Sample Dataset](#sample-dataset)
 - [Sample Dataset](#rename-columns)
+- [Download](#download)
 
 Problem
 --------
@@ -22,3 +23,7 @@ To rename the columns of the source table one need to have an intermediate mappi
 
 Then a manual step need to be added in the advanced query editor and the column data types need to be recreated manually. The code is shown below.
 ![image](https://github.com/christostsiaras/Power-BI/assets/5610687/a4913b94-8049-4424-bef7-f7f7783ba55e)
+
+Downaload
+---------
+Download the file here [here](https://github.com/christostsiaras/Power-BI/tree/main/Rename%20Columns)
