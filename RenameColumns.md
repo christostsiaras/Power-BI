@@ -26,4 +26,4 @@ Then a manual step need to be added in the advanced query editor and the column 
 
 Downaload
 ---------
-Download the file here [here](https://github.com/christostsiaras/Power-BI/tree/main/Rename%20Columns)
+Download the file [here](https://github.com/christostsiaras/Power-BI/tree/main/Rename%20Columns)
