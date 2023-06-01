@@ -5,6 +5,7 @@
 - [Dynamic KPI Selection](#dynamic-kpi-selection)
 - [Create Generic DAX Measures](#create-generic-dax-measures)
 - [Consume a Generic DAX Measure](#consume-a-generic-dax-measure)
+- [Download](#download)
 
 Problem
 --------
@@ -52,4 +53,7 @@ To add the report as a tooltip create a hidden page, tick on the option Tooltips
 To consume tha page with the normal filter remove the top N filter from the visualization and add a slicer on the product line column.
 ![9](https://github.com/christostsiaras/Power-BI/assets/5610687/cda9fa6d-3c40-4625-87b0-9bf11500f61d)
 
+Download
+---------
+Download the file [here](https://github.com/christostsiaras/Power-BI/tree/main/Other)
 
