@@ -8,7 +8,7 @@
 Problem
 --------
 In case the name of a generic column e.g., Column1, Column2, etc need to be updated via another human readable name the method to do it is descibed below.
-![image](https://github.com/christostsiaras/Power-BI/assets/5610687/de91fa24-f415-4d79-8ec7-3c8ab85dc0a4)
+![image](https://github.com/christostsiaras/Power-BI/assets/5610687/ef5fa205-2cae-4335-af59-d388ba754a7f)
 
 Sample Dataset
 ----------------
