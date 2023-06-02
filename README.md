@@ -24,7 +24,7 @@ Show __Other__ option in tooltips where is not possible to illustrate the full l
 Rename Columns
 --------------
 Rename columns of a table with the support of a mapping table in DAX.
-![image](https://github.com/christostsiaras/Power-BI/assets/5610687/a6dae020-6687-4761-80b9-cac6b051a654)
+![image](https://github.com/christostsiaras/Power-BI/assets/5610687/251d84ae-f4d2-448c-ac38-3663bcb20e09)
 [Click here for details](/RenameColumns.md)
 
 Tips
